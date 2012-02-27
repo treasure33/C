@@ -9,9 +9,9 @@ unsigned char	roolupbit(int i, enum roolupmode mode)
     switch (mode)
     {
 	case LTOR:
-    		return r_lefttoright[i];
+    		return roll_lefttoright[i];
 	case RTOL:
-		return r_righttoleft[i];
+		return roll_righttoleft[i];
 	default:
 		return 0;
     }
