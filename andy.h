@@ -37,14 +37,37 @@ static const unsigned char fill_lefttoright[]={ /* Заполняем битом
 						003, //- 0b00000011
 						001, //- 0b00000001
 						000  //- 0b00000000
-					   };
+					   	};
+static const unsigned char empty_lefttoright[]={ /* Очищаем бит 0 с лева на право */
+						128, //- 0b10000000
+						192, //- 0b11000000
+						224, //- 0b11100000
+						240, //- 0b11110000
+						248, //- 0b11111000
+						252, //- 0b11111100
+						254, //- 0b11111110
+						255  //- 0b11111111
+					   	};
+static const unsigned char empty_righttoleft[]={ /* Очищаем бит 0 с права на лево */
+						001, //- 0b00000001
+						003, //- 0b00000011
+						007, //- 0b00000111
+						015, //- 0b00001111
+						031, //- 0b00011111
+						063, //- 0b00111111
+						127, //- 0b01111111
+						255  //- 0b11111111
+					   	};
+
 
 
 enum rollupmode {
     LTOR    = 1,
     RTOL    = 2,
     FRTOL   = 3,
-    FLTOR   = 4
+    FLTOR   = 4,
+    ERTOL   = 5,
+    ELTOR   = 6
  };
 
 unsigned char	rollupzerobit(int i, enum rollupmode mode);
