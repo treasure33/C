@@ -10,16 +10,22 @@ unsigned char	rollupzerobit(int i, enum rollupmode mode)
     {
 	case LTOR:
     		return roll_lefttoright[i];
+		break;
 	case RTOL:
 		return roll_righttoleft[i];
+		break;
 	case FRTOL:
 		return fill_righttoleft[i];
+		break;
 	case FLTOR:
 		return fill_lefttoright[i];
+		break;
 	case ERTOL:
 		return empty_righttoleft[i];
+		break;
 	case ELTOR:
 		return empty_lefttoright[i];
+		break;
 	default:
 		return 0;
     }
