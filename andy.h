@@ -47,5 +47,5 @@ enum roolupmode {
     FLTOR   = 4
  };
 
-unsigned char	roolupbit(int i, enum roolupmode mode);
+unsigned char	rollupzerobit(int i, enum roolupmode mode);
 
