@@ -40,12 +40,12 @@ static const unsigned char fill_lefttoright[]={ /* Заполняем битом
 					   };
 
 
-enum roolupmode {
+enum rollupmode {
     LTOR    = 1,
     RTOL    = 2,
     FRTOL   = 3,
     FLTOR   = 4
  };
 
-unsigned char	rollupzerobit(int i, enum roolupmode mode);
-
+unsigned char	rollupzerobit(int i, enum rollupmode mode);
+char *format_binary(unsigned int x);                                                                                   
