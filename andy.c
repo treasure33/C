@@ -12,6 +12,10 @@ unsigned char	roolupbit(int i, enum roolupmode mode)
     		return roll_lefttoright[i];
 	case RTOL:
 		return roll_righttoleft[i];
+	case FRTOL:
+		return fill_righttoleft[i];
+	case FLTOR:
+		return fill_lefttoright[i];
 	default:
 		return 0;
     }
