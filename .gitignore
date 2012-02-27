@@ -1,0 +1,5 @@
+# Compiled source #
+###################
+*.o
+main
+.DS_Store*
