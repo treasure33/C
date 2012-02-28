@@ -38,7 +38,7 @@ unsigned char	rollupzerobit(int i, enum rollupmode mode)
     switch (mode)
     {
 	case LTOR:
-    		return roll_lefttoright[i];
+        return roll_lefttoright[i];
 	case RTOL:
 		return roll_righttoleft[i];
 	case FRTOL:
