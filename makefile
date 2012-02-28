@@ -1,4 +1,4 @@
-objects = main.o andy.o
+objects = main.o andy_led.o
 CFLAGS=-g
 
 all: compile
@@ -7,7 +7,7 @@ all: compile
 compile: $(objects) 
 	@echo "Compile result ..."
 	cc -o main $(objects)
-${objects}: andy.h
+${objects}: andy_led.h
 clean:
 	@echo "Clean previouse compile result ...."
 	rm -f *.o
