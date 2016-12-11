@@ -1,34 +1,4 @@
-/* Сдесь будет какой то код */
 #include "andy_led.h"
-
-/*  Примеры вызова фунцкии rollupzerobit
-
-int main(void)
-{
-	unsigned char i=0;
-	
-	int z=0;
-	for (z=0;z<128;z++)
-	{
-		// Проверка бит движется с лева на право по кругу
-	    	printf("%03d - 0b%s\n", rollupzerobit(z,LTOR), format_binary(rollupzerobit(z,LTOR)));
-		
-		// Проверка все биты заполняются нулем с права до конца, а затем так же заполняются единицами
-	    	if (z%8==0 && i==1)
-			i=0;
-            	else
-			if (z%8==0 && i==0)
-		   		i=1;
-
-	    	if (i==1)	
-	    		printf("%03d - 0b%s\n", rollupzerobit(z,FRTOL), format_binary(rollupzerobit(z,FRTOL)));
-	    	else
-	    		printf("%03d - 0b%s\n", rollupzerobit(z,ERTOL), format_binary(rollupzerobit(z,ERTOL)));
-
-	}
-	return 0;
-}
-*/
 
 unsigned char	rollupzerobit(int i, enum rollupmode mode)
 {
